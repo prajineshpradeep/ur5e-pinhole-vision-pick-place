@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.8)
+project(ur5e_custom_gripper_moveit_config)
+
+find_package(ament_cmake REQUIRED)
+
+install(DIRECTORY config launch rviz urdf
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

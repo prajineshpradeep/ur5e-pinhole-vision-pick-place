@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ur5e_custom_gripper_moveit_config
+    relative_path: urdf/ur5e_custom_gripper.urdf.xacro
+  srdf:
+    relative_path: config/ur5e_custom_gripper.srdf
+  package_settings:
+    author_name: prajinesh
+    author_email: prajineshpradeep2005@gmail.com
+    generated_timestamp: 1795552478
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
